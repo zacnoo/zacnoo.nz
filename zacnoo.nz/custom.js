@@ -25,10 +25,7 @@ var startAnimations = function() {
                 targets: '#gameinput',
                 width: [$('#gameinput').width(), $('#actualinput').width()],
                 easing: 'linear',
-                duration: '50ms',
-                update: function(anime) {
-                	console.log($('#gameinput').width())
-                }
+                duration: '50ms'
             })
         }
     })
