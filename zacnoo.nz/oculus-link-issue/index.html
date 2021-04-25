@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- External Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <!-- Google Font Loader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <div class="container p-5">
+        <div class="row controls">
+            <div class="col text-right">Pause between</div>
+            <div class="col"><input type="range" id='delay' onchange="delay = this.value*2;startAnimations();"></div>
+        </div>
+        <div class="row controls">
+            <div class="col text-right">Velocity</div>
+            <div class="col"><input type="range" id='rof' onchange="rof = 400/(this.value/50);startAnimations();"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center h1 pt-5">Actual Input</div>
+            <span class="text-right px-3" style="width:15%;border-right:1px solid black">Release point</span>
+
+            <div class="col-12 bg-danger px-0">
+                <div id="actualinput" class="inputbar py-5 bg-success"> </div>
+            </div>
+             <span class="text-right px-3" style="width:90%;border-right:1px solid black">Actuation point</span>
+
+            <div class="col-12 text-center h1 pt-5">Game input</div>
+            <span class="text-right px-3" style="width:15%;border-right:1px solid black">Release point</span>
+            <div class="col-12 bg-danger px-0">
+                <div id="gameinput" class="py-5 bg-success"> </div>
+            </div>
+                <span class="text-right px-3" style="width:90%;border-right:1px solid black">Actuation point</span>
+
+        </div>
+    </div>
+</body>
+
+</html>
