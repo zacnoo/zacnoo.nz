@@ -15,8 +15,6 @@ rem Loose 200BX
 curl zacnoo.nz/beamng/vehicles/coupe/Loose.pc > vehicles\coupe\Loose-200BX.pc
 curl zacnoo.nz/beamng/vehicles/coupe/Loose.jpg > vehicles\coupe\Loose-200BX.jpg
 
-@echo on
-
 echo Vehicles loaded
 
 pause
