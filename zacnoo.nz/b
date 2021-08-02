@@ -21,6 +21,6 @@ pause
 
 echo Cleaning up
 del vehicles\coupe\Quick-200BX.pc
-del vehicles\coupe\Loose-200BX.jpg
+del vehicles\coupe\Quick-200BX.jpg
 del vehicles\coupe\Loose-200BX.pc
 del vehicles\coupe\Loose-200BX.jpg
