@@ -1,14 +1,28 @@
 set "paf=%AppData%\..\Local\BeamNG.drive\latest.lnk"
 
+@echo off
+
 for /f "delims=" %%a in ('wmic path win32_shortcutfile where "name='%paf:\=\\%'" get target /value') do (
     for /f "tokens=2 delims==" %%b in ("%%~a") do set ext=%%~xb
 )
 cd %AppData%\..\Local\BeamNG.drive\0%ext%
 
 rem Grippy 200BX
-curl http://zacnoo.nz/beamng/vehicles/coupe/Fast.pc > vehicles\coupe\zacnoo-quicko.pc
-curl zacnoo.nz/beamng/vehicles/coupe/Fast.jpg > vehicles\coupe\zacnoo-quicko.jpg
+curl zacnoo.nz/beamng/vehicles/coupe/Fast.pc > vehicles\coupe\Quick-200BX.pc
+curl zacnoo.nz/beamng/vehicles/coupe/Fast.jpg > vehicles\coupe\Loose-200BX.jpg
 
 rem Loose 200BX
-curl http://zacnoo.nz/beamng/vehicles/coupe/Loose.pc > vehicles\coupe\zacnoo-loose.pc
-curl zacnoo.nz/beamng/vehicles/coupe/Loose.jpg > vehicles\coupe\zacnoo-loose.jpg
+curl zacnoo.nz/beamng/vehicles/coupe/Loose.pc > vehicles\coupe\Loose-200BX.pc
+curl zacnoo.nz/beamng/vehicles/coupe/Loose.jpg > vehicles\coupe\Loose-200BX.jpg
+
+@echo on
+
+echo Vehicles loaded
+
+pause
+
+echo Cleaning up
+del vehicles\coupe\Quick-200BX.pc
+del vehicles\coupe\Loose-200BX.jpg
+del vehicles\coupe\Loose-200BX.pc
+del vehicles\coupe\Loose-200BX.jpg
