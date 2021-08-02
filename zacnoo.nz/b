@@ -9,7 +9,7 @@ cd %AppData%\..\Local\BeamNG.drive\0%ext%
 
 rem Grippy 200BX
 curl zacnoo.nz/beamng/vehicles/coupe/Fast.pc > vehicles\coupe\Quick-200BX.pc
-curl zacnoo.nz/beamng/vehicles/coupe/Fast.jpg > vehicles\coupe\Loose-200BX.jpg
+curl zacnoo.nz/beamng/vehicles/coupe/Fast.jpg > vehicles\coupe\Quick-200BX.jpg
 
 rem Loose 200BX
 curl zacnoo.nz/beamng/vehicles/coupe/Loose.pc > vehicles\coupe\Loose-200BX.pc
